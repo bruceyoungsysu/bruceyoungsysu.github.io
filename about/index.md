@@ -5,7 +5,7 @@ type: about
 <center>Hi there !</center>
 <center>This is Tianqi (Bruce) Yang, a physics engineer and programer.</center>
 <center>
- <a>ASML</a>
+ <a href =https://en.wikipedia.org/wiki/Samsung>ASML</a>
 </center>
 <br/>
 I have supported many international companies such as [Samsung](https://en.wikipedia.org/wiki/Samsung), [Intel](https://en.wikipedia.org/wiki/Intel), [TSMC](https://en.wikipedia.org/wiki/TSMC), [GlobalFoundries](https://en.wikipedia.org/wiki/GlobalFoundries) in physical modeling and data analysis
