@@ -31,7 +31,7 @@ ___
     A1 --> B1
     B1 --real part--> C1[clean image]
 ```
-[](../assets/images/avatar.gif)
+[](https://github.com/bruceyoungsysu/bruceyoungsysu.github.io/blob/master/_posts/log_gabor/Log_gabor_wavelet_algo.PNG?raw=true)
 
 ___
 ### Outputs
@@ -40,7 +40,7 @@ ___
 ![](https://github.com/bruceyoungsysu/bruceyoungsysu.github.io/blob/master/_posts/log_gabor/1D_log_gabor_test.PNG?raw=true)
 
 - 2D SEM image denosing:
-![](log_gabor/2d_log_gabor_test.PNG)
+![](https://github.com/bruceyoungsysu/bruceyoungsysu.github.io/blob/master/_posts/log_gabor/2d_log_gabor_test.PNG?raw=true)
 
 ___
 ### Code
