@@ -41,10 +41,14 @@ ___
 
 ___
 ### Code:
-- Python version of 2D log-Gabor filter
+Python version of 2D log-Gabor filter:
+- Libraries
 ~~~python
 import math
 import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
+~~~
+- Function definition
+~~~python
 ~~~
