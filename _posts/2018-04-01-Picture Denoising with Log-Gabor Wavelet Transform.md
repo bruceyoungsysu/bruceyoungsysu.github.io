@@ -54,7 +54,7 @@ import matplotlib.pyplot as plt
 
 
 def denoise_pp_2d(arr, k, nscale, mult, norient, softness):
-    """
+    '''
     Denoising pictures with log-Garbor wavelet transformation.
     ------
     Attributes:
@@ -67,7 +67,7 @@ def denoise_pp_2d(arr, k, nscale, mult, norient, softness):
     ------
     Returns:
         cleanimaghe: numpy array. Denoised signal
-    """
+    '''
     
     'installation parameters'
     minWaveLength = 2.  # wavelength. Affects wavelet scale in freq domain
