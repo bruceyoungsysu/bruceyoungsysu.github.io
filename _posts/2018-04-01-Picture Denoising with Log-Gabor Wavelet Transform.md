@@ -6,7 +6,7 @@ categories:
 - Image Processing
 ---
 
-### Concepts:
+### Concepts
 Wavelet transform is frequently used in picture denosing as it can cover broder length in frequency domain. Wavelet transforms are based on small wavelets with limited duration. The translated-version
 wavelets locate where we concern. Whereas the scaled-version wavelets allow us to analyze the signal in different scale.
 
@@ -15,8 +15,9 @@ The log-Gabor filter is an advancement of Gabor filter. it better fits the stati
 Definition of a 1D Gabor filter (from [wikipedia](https://en.wikipedia.org/wiki/Log_Gabor_filter)):
 
 ![](https://wikimedia.org/api/rest_v1/media/math/render/svg/f1aa5bade456f80d1adfccd89acd28e230e99180)
+
 ___
-### Algorithm Implementation:
+### Algorithm Implementation
 
 ```graphTB
     A[Input Array] --FFT--> B(Freq Array)
@@ -31,7 +32,7 @@ ___
     B1 --real part--> C1[clean image]
 ```
 ___
-### Outputs:
+### Outputs
 
 - 1D Gaussian noise filtering:
 []()
@@ -40,7 +41,7 @@ ___
 []()
 
 ___
-### Code:
+### Code
 Python version of 2D log-Gabor filter:
 - Libraries
 ~~~python
