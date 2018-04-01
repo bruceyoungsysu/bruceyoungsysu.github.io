@@ -31,7 +31,7 @@ ___
     A1 --> B1
     B1 --real part--> C1[clean image]
 ```
-[](../assets/images/log_gabor/Log_gabor_wavelet_algo.PNG)
+[](../assets/images/avatar.gif)
 
 ___
 ### Outputs
