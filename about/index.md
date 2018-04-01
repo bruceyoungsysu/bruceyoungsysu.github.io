@@ -2,7 +2,7 @@
 layout: page
 type: about
 ---
-
+~~~html
 <center>Hi there !</center>
 <center>This is Tianqi (Bruce) Yang, a physics engineer and programer.</center>
 <center>I currently work as product engineer at <a href = https://en.wikipedia.org/wiki/ASML_Holding>ASML</a>.</center>
@@ -13,3 +13,4 @@ type: about
 <center>See my resume here, projects here, and my study notes here.</center>
 <center>My skills: Python, C, Matlab, Assembly language,Model building, Data analysis.</center>
 <center>Optical physics, Material physics, Electronic physics.</center>
+~~~
