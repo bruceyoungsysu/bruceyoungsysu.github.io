@@ -14,7 +14,7 @@ The log-Gabor filter is an advancement of Gabor filter. it better fits the stati
 
 Definition of a 1D Gabor filter (from [wikipedia](https://en.wikipedia.org/wiki/Log_Gabor_filter)):
 
-![](../images/log_gabor_filter)
+![](https://wikimedia.org/api/rest_v1/media/math/render/svg/f1aa5bade456f80d1adfccd89acd28e230e99180)
 ___
 ### Algorithm Implementation:
 
