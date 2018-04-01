@@ -1,5 +1,5 @@
 ---
-title: Categories
+title: Picture Denoising with Log-Gabor Wavelet Transform
 date: 2018-04-01 16:34:09
 categories:
 - Python
@@ -43,31 +43,12 @@ ___
 ### Code:
 - Python version of 2D log-Gabor filter
 ~~~python
-"""
-Created on Thu Mar 29 10:38:33 2018
-@author: yang
-"""
 import math
 import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
 
-
 def denoise_pp_2d(arr, k, nscale, mult, norient, softness):
-    '''
-    Denoising pictures with log-Garbor wavelet transformation.
-    ------
-    Attributes:
-        arr: numpy array like. The input signal need to denoise.
-        k: Standard deviation of noise to reject. Affect threshold.
-        nscale: Scale of wavelet. Affect frequency coverd by wavelets.
-        mult: Affect threshold.
-        norient: number of angle sampling of log-Gabor filter. Bigger norient brings higher accuracy with longer run time.
-        softness: Method to calculate threshold. 0 - hard threshold, 1 - soft threshold.
-    ------
-    Returns:
-        cleanimaghe: numpy array. Denoised signal
-    '''
     
     'installation parameters'
     minWaveLength = 2.  # wavelength. Affects wavelet scale in freq domain
