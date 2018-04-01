@@ -43,7 +43,6 @@ ___
 ### Code:
 - Python version of 2D log-Gabor filter
 ```python
-# -*- coding: utf-8 -*-
 """
 Created on Thu Mar 29 10:38:33 2018
 @author: yang
@@ -145,8 +144,7 @@ def denoise_pp_2d(arr, k, nscale, mult, norient, softness):
 
     cleanimage = np.real(total_energy)
     return cleanimage
-
-
+    
 if __name__ == "__main__":
     image_path = r"C:\Users\bruyang\Desktop\Coding\projects\image_processing\ima.png"
     im = Image.open(image_path)
