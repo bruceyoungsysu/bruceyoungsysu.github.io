@@ -42,7 +42,7 @@ ___
 ___
 ### Code:
 - Python version of 2D log-Gabor filter
-```python
+~~~python
 """
 Created on Thu Mar 29 10:38:33 2018
 @author: yang
@@ -153,5 +153,4 @@ if __name__ == "__main__":
     c_image = denoise_pp_2d(arr, 2, 5, 2.5, 6, 1)
     c_im = Image.fromarray(c_image-c_image.min())
     c_im.show()
-
-```
+~~~
