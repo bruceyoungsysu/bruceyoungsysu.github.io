@@ -37,10 +37,10 @@ ___
 ### Outputs
 
 - 1D Gaussian noise filtering:
-[](/assets/images/1D_log_gabor_test.PNG)
+[](/log_gabor/1D_log_gabor_test.PNG)
 
 - 2D SEM image denosing:
-[](/assets/images/2d_log_gabor_test.PNG)
+[](/log_gabor/2d_log_gabor_test.PNG)
 
 ___
 ### Code
