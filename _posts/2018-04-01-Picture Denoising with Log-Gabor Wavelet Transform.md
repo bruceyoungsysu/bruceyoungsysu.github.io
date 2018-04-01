@@ -31,14 +31,15 @@ ___
     A1 --> B1
     B1 --real part--> C1[clean image]
 ```
+[](/assets/images/Log_gabor_wavelet_algo.PNG)
 ___
 ### Outputs
 
 - 1D Gaussian noise filtering:
-[]()
+[](/assets/images/1D_log_gabor_test.PNG)
 
 - 2D SEM image denosing:
-[]()
+[](/assets/images/2d_log_gabor_test.PNG)
 
 ___
 ### Code
