@@ -40,7 +40,7 @@ ___
 ![](https://github.com/bruceyoungsysu/bruceyoungsysu.github.io/blob/master/_posts/log_gabor/1D_log_gabor_test.PNG?raw=true)
 
 - 2D SEM image denosing:
-![](#https://github.com/bruceyoungsysu/bruceyoungsysu.github.io/blob/master/_posts/log_gabor/2d_log_gabor_test.PNG?raw=true)
+![](https://github.com/bruceyoungsysu/bruceyoungsysu.github.io/blob/master/_posts/log_gabor/2d_log_gabor_test.PNG?raw=true)
 
 ___
 ### Code
