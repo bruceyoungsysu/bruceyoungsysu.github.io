@@ -14,7 +14,7 @@ In this system, we will take two images as input and one image as output whose s
 
 Here is an example I generated from this model with image of 'Deadpool in Civil War'(Image source: theodysseyonline.com) and combine it with the style of Guernica by Picasso (1937).
 
-<img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/style_transfer/Deadpool.png" width=340><img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/style_transfer/guernica.jpg" width=340>   
+![](https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/style_transfer/Deadpool.png)<img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/style_transfer/guernica.jpg" width=340>   
 
 Then the output after style transfer is
 
