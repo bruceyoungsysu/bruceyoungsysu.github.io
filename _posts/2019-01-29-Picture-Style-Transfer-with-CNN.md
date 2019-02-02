@@ -73,6 +73,23 @@ Where $\alpha$ and $\beta​$ are weights of different loss functions respective
 
 We rebuild the VGG-19 layer model as our network and load weights from file as initialization. We used `tf.train.AdamOptimizer` as our optimizer to minimize total loss function. The content loss weight  of each conten layer is set as `[0.5, 1.0, 1.5, 3.0, 4.0]`.  The conten loss weight $\alpha$ is set as 0.01 while style loss weight $\beta$ is set as 1. Learning rate in this case is set as 2.0 while it does not matter too much in this case except affecting the rendering rate of original image.
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX", "output/HTML-CSS"],
+    tex2jax: {
+      <!--$表示行内元素，$$表示块状元素 -->
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+      processEscapes: true
+    },
+    "HTML-CSS": { availableFonts: ["TeX"] }
+  });
+</script>
+<!--加载MathJax的最新文件， async表示异步加载进来 -->
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js">
+</script>
+
 
 
 
