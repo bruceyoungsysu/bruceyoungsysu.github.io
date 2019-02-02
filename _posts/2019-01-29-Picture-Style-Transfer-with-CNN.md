@@ -14,15 +14,15 @@ In this system, we will take two images as input and one image as output whose s
 
 Here is an example I generated from this model with image of 'Deadpool in Civil War'(Image source: theodysseyonline.com) and combine it with the style of Guernica by Picasso (1937).
 
-<img src="https://github.com/bruceyoungsysu/bruceyoungsysu.github.io/blob/master/_posts/style_transfer/Deadpool.png" width=340><img src="https://github.com/bruceyoungsysu/bruceyoungsysu.github.io/blob/master/_posts/style_transfer/guernica.jpg" width=340>   
+<img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/style_transfer/Deadpool.png" width=340><img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/style_transfer/guernica.jpg" width=340>   
 
 Then the output after style transfer is
 
-<img src="./style_transfer/Deadpool_transferred.png" width=340>
+<img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/style_transfer/Deadpool_transferred.png" width=340>
 
 We can also apply the style of famous Starry Night by Van Gogh
 
-<img src="./style_transfer/Deadpool_sn.png" width=340>
+<img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/style_transfer/Deadpool_sn.png" width=340>
 
 
 
@@ -34,7 +34,7 @@ Then how to represent the conten and style of an image? In the above article, th
 
 Here we use the already well trained [VGG-19 layer](http://www.robots.ox.ac.uk/~vgg/research/very_deep/) model as the baseline to infer style and content information from a picture. The structure of the CNN is like:
 
-<img src="./style_transfer/vgg19.png" width=300>
+<img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/style_transfer/vgg19.png" width=300>
 
 (From: http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture9.pdf)
 
