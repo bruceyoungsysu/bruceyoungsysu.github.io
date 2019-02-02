@@ -1,8 +1,10 @@
 ---
-title: Trump Twitter Bot Based on RNN
-Date: 2019-01-20 16:34:09
-categories: 
-- RNN
-tags: NLP, RNN
+title: Picture Denoising with Log-Gabor Wavelet Transform
+date: 2018-04-01 16:34:09
+categories:
+- Python
+- Image Processing
+
 ---
 
+### Concepts
