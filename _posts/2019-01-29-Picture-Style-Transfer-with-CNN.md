@@ -38,13 +38,13 @@ Here we use the already well trained [VGG-19 layer](http://www.robots.ox.ac.uk/~
 
 (From: http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture9.pdf)
 
-The layers of 'conv1_1',  'conv2_1', 'conv3_1', 'conv4_1',and 'conv5_1' are used as content layers to extract content features of different dimensions. Each of the above layers has defined a series of filter banks which varies with the postion of the layer in the network. We assume layer $l​$ has number of $N_l​$ filter and each filter has dimension of $M_l​$. If the original image is $p​$ and generated image is $f​$, the square loss of content layer $l​$ is defined as:
+The layers of 'conv1_1',  'conv2_1', 'conv3_1', 'conv4_1',and 'conv5_1' are used as content layers to extract content features of different dimensions. Each of the above layers has defined a series of filter banks which varies with the postion of the layer in the network. We assume layer $l$ has number of \$N_l\$ filter and each filter has dimension of $M_l$. If the original image is $p$ and generated image is $f$, the square loss of content layer $l$ is defined as:
 $$
 \begin{align*}
 L_{content}(p,g,l)=1/2 (\Sigma_{ij} (G^l-P^l)_{ij})^2
 \end{align*}
 $$
-Where $F^l$ and $P^l$ is feture map of generated and original image respectively.
+Where $F^l​$ and $P^l​$ is feture map of generated and original image respectively.
 
 We can use feature correlations between features to represent the style of an image, which is given by Gram Matrix $G^l\in R^{N^l N^l}​$ where $G^l_{ij}​$ is the inner product between the feature maps $i​$ and $j​$ in layer $l​$:
 
