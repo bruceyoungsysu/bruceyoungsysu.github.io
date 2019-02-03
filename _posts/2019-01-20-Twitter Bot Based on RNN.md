@@ -14,13 +14,13 @@ The most unique feature of modeling language is that the relation between text c
 
 Thus in this way a conventional neural network cannot model language, and a new network structure came up: Recursive Neural Network (RNN).  A neuron in RNN is different as it passes the state of neuron at current time step to the next time step. If we unfold the neuron in time dimension, it will look like:
 
-![](/Users/tianqiyang/Documents/github/bruceyoungsysu.github.io/_posts/trump_twitter/RNN_neurons.png)
+![](https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/trump_twitter/RNN_neurons.png)
 
 (Graph by Nature)
 
 The expansion of neurons is pretty much alike we write down a sentence (which is temporal) on a page of paper(which is spatial). Thus we can obtain a sequence of outputs, which is the respond our network. According to different types of inputs, we can build models on different levels, say character level, word level and sentence level. We can image the input is a vector representing whatever user is interested in like a word：
 
-![](/Users/tianqiyang/Documents/github/bruceyoungsysu.github.io/_posts/trump_twitter/RNN_structure.png)
+![](https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/trump_twitter/RNN_structure.png)
 
 (Source: https://docs.google.com/presentation/d/1QydMhsGFeUzDYZr7dV0tt9WJryleOoKUyJth4ftRDbA/edit#slide=id.g1ce324a1fd_0_142)
 
