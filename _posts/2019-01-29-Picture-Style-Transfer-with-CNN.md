@@ -73,6 +73,10 @@ Where $\alpha$ and $\beta​$ are weights of different loss functions respective
 
 We rebuild the VGG-19 layer model as our network and load weights from file as initialization. We used `tf.train.AdamOptimizer` as our optimizer to minimize total loss function. The content loss weight  of each conten layer is set as `[0.5, 1.0, 1.5, 3.0, 4.0]`.  The conten loss weight $\alpha$ is set as 0.01 while style loss weight $\beta$ is set as 1. Learning rate in this case is set as 2.0 while it does not matter too much in this case except affecting the rendering rate of original image.
 
+The full code is here: https://github.com/bruceyoungsysu/style_transfer
+
+Reference: https://github.com/chiphuyen/stanford-tensorflow-tutorials/tree/master/assignments/02_style_transfer
+
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     extensions: ["tex2jax.js"],
