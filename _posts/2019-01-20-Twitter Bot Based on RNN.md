@@ -1,5 +1,5 @@
 ---
-title: Twitter Bot Based on RNN
+title: Twitter Bot on RNN
 Date: 2019-01-20 16:34:09
 categories: 
 - RNN
