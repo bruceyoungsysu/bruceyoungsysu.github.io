@@ -1,177 +1,86 @@
 ---
-title: Next Theme
-description: NexT is a high quality elegant Jekyll theme ported from Hexo Next. It is crafted from scratch, with love.
+title: Build Picture Classifier on CNN
+description: CNN is the most popular way to for image processing currently.
 categories:
  - tutorial
-tags:
+tags: CNN
 ---
 
-> NexT is a high quality elegant [Jekyll](https://jekyllrb.com) theme ported from [Hexo Next](https://github.com/iissnan/hexo-theme-next). It is crafted from scratch, with love.
+Any tranformaton involving frequency domain operations is suitable for image processing. An image can be treated as a two-dimensional signal which can be applied many image processing techniques. High dimensional Fourier Transformation, Convolution and even Wavelet Transformation are suitable to extract certain features from a 2D signal with possibilities of various filters.
 
-<!-- more -->
+# Why CNN is Different
 
-[Live Preview](http://simpleyyt.github.io/jekyll-theme-next/)
+Basically we can consider two ways of interpreting the content of an image: one way is to treat the image in time domain, thus we can expand the image by pixel forming them to 1D vector. 
 
-## Screenshots
+![](/Users/tianqiyang/Documents/github/bruceyoungsysu.github.io/_posts/classifier_on_CNN/one_dimensional.png) 
 
-* Desktop
-![Desktop Preview](http://iissnan.com/nexus/next/desktop-preview.png)
+Thus the one dimensional vector can be used in any classifier, not only Neural Network, but also SVM and random forest. 
 
-* Sidebar
+Or we can treat it as a two dimensional signal as we mentioned above. Then train the train the filters on its extracted signals. Thus we actually updating this network on frequency domain.
 
-![Desktop Sidebar Preview](http://iissnan.com/nexus/next/desktop-sidebar-preview.png)
+![](/Users/tianqiyang/Documents/github/bruceyoungsysu.github.io/_posts/classifier_on_CNN/conv.png)
 
-* Sidebar (Post details page)
+(All figures from: http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture05.pdf)
 
-![Desktop Sidebar Preview](http://iissnan.com/nexus/next/desktop-sidebar-toc.png)
+# How to Build a CNN
 
-* Mobile
+Here we will build a CNN for digit recognizer, for detail of the task please refer this kaggle page https://www.kaggle.com/c/digit-recognizer. The code refers to the convnet on Minist dataset example at Stanford https://github.com/chiphuyen/stanford-tensorflow-tutorials/blob/master/examples/07_convnet_mnist.py.
 
-![Mobile Preview](http://iissnan.com/nexus/next/mobile.png)
+There are several certain steps need to be configured before running the network:
 
+- Define the output size. Meanwhile the batch size is also needs to be well defined. We can use `tf.data.Iterator.from_structure` to make a iterator generating the batch size of input data each time.
 
-## Installation
+  ```python
+          with tf.name_scope('data'):
+              train, test = parse_data(self.train_path, self.test_path)
+              # load data with tf.data.Dataset
+              train_data = tf.data.Dataset.from_tensor_slices(train)
+              test_data = tf.data.Dataset.from_tensor_slices(test)
+              # define the data batches
+              train_data = train_data.shuffle(10000)
+              train_data = train_data.batch(4000)
+              test_data = test_data.batch(4000)
+              # make a batch data interator
+              iterator = tf.data.Iterator.from_structure(train_data.output_types, train_data.output_shapes)
+              img, label = iterator.get_next()
+              # reshape the input and target
+              self.label = tf.one_hot(indices=label, depth=10, on_value=1, off_value=0)
+              self.img = tf.reshape(img, [-1, 28, 28, 1])
+              # make initializers for iterator
+              self.train_init = iterator.make_initializer(train_data)
+              self.test_init = iterator.make_initializer(test_data)
+  ```
 
-Check whether you have `Ruby 2.1.0` or higher installed:
+- Define the structure of CNN, i.e. how many convolutional layers and how many pooling layers, and their types. Then define the output form by setting an output layer.
 
-```sh
-ruby --version
-```
+  ```python
+      def inference(self):
+          # define conv and pooling layers
+          conv1 = conv_relu(self.img, filters=32, k_size= 5, stride=1, padding='SAME',scope_name= 'conv1')
+          pool1 = maxpool(conv1, ksize=2, stride=1, padding='SAME', scope_name='pool1')
+          conv2 = conv_relu(pool1, filters=64, k_size=5, stride=1, padding='SAME', scope_name='conv2')
+          pool2 = maxpool(conv2, ksize=2, stride=1, padding='SAME', scope_name='pool2')
+          # reshape the pooling layer final output
+          feature_shape = pool2.shape[1]*pool2.shape[2]*pool2.shape[3]
+          pool2 = tf.reshape(pool2, [-1, feature_shape])
+          # feed into output layer, dropout to prevent overfitting
+          fc1 = fully_connected(pool2, 1024, scope_name='fc1')
+          dropout = tf.nn.dropout(tf.nn.relu(fc1), self.keep_prob, name='relu_dropout')
+          self.logits = fully_connected(dropout, 10, scope_name='logits')
+  ```
 
-Install `Bundler`:
+- Define the loss function and optimizer
 
-```sh
-gem install bundler
-```
+  ```python
+      def loss(self):
+          with tf.name_scope('loss'):
+              entropy = tf.nn.softmax_cross_entropy_with_logits(labels=self.label, logits=self.logits)
+              self.loss = tf.reduce_mean(entropy, name='loss')
+  
+      def optimize(self):
+          self.optimizor = tf.train.AdamOptimizer(self.lr).minimize(self.loss)
+  ```
 
-Clone Jacman theme:
+  The loss function is the entropy between the labels and outputs, if we are more interested in long distance prediction, we could make the sequence shift between target and prediction bigger. 
 
-```sh
-git clone https://github.com/Simpleyyt/jekyll-theme-next.git
-cd jekyll-theme-next
-```
-
-Install Jekyll and other dependencies from the GitHub Pages gem:
-
-```sh
-bundle install
-```
-
-Run your Jekyll site locally:
-
-```sh
-bundle exec jekyll server
-```
-
-More Details：[Setting up your GitHub Pages site locally with Jekyll](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
-
-
-## Features
-
-### Multiple languages support, including: English / Russian / French / German / Simplified Chinese / Traditional Chinese.
-
-Default language is English.
-
-```yml
-language: en
-# language: zh-Hans
-# language: fr-FR
-# language: zh-hk
-# language: zh-tw
-# language: ru
-# language: de
-```
-
-Set `language` field as following in site `_config.yml` to change to Chinese.
-
-```yml
-language: zh-Hans
-```
-
-### Comment support.
-
-NexT has native support for `DuoShuo` and `Disqus` comment systems.
-
-Add the following snippets to your `_config.yml`:
-
-```yml
-duoshuo:
-  enable: true
-  shortname: your-duoshuo-shortname
-```
-
-OR
-
-```yml
-disqus_shortname: your-disqus-shortname
-```
-
-### Social Media
-
-NexT can automatically add links to your Social Media accounts:
-
-```yml
-social:
-  GitHub: your-github-url
-  Twitter: your-twitter-url
-  Weibo: your-weibo-url
-  DouBan: your-douban-url
-  ZhiHu: your-zhihu-url
-```
-
-### Feed link.
-
-> Show a feed link.
-
-Set `rss` field in theme's `_config.yml`, as the following value:
-
-1. `rss: false` will totally disable feed link.
-2. `rss:  ` use sites' feed link. This is the default option.
-
-    Follow the installation instruction in the plugin's README. After the configuration is done for this plugin, the feed link is ready too.
-
-3. `rss: http://your-feed-url` set specific feed link.
-
-### Up to 5 code highlight themes built-in.
-
-NexT uses [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) with 5 themes for you to choose from.
-Next use `normal` by default. Have a preview about `normal` and `night`:
-
-![Tomorrow Normal Preview](http://iissnan.com/nexus/next/tomorrow-normal.png)
-![Tomorrow Night Preview](http://iissnan.com/nexus/next/tomorrow-night.png)
-
-Head over to [Tomorrow Theme](https://github.com/chriskempson/tomorrow-theme) for more details.
-
-## Configuration
-
-NexT comes with few configurations.
-
-```yml
-
-# Menu configuration.
-menu:
-  home: /
-  archives: /archives
-
-# Favicon
-favicon: /favicon.ico
-
-# Avatar (put the image into next/source/images/)
-# can be any image format supported by web browsers (JPEG,PNG,GIF,SVG,..)
-avatar: /default_avatar.png
-
-# Code highlight theme
-# available: normal | night | night eighties | night blue | night bright
-highlight_theme: normal
-
-# Fancybox for image gallery
-fancybox: true
-
-# Specify the date when the site was setup
-since: 2013
-
-```
-
-## Browser support
-
-![Browser support](http://iissnan.com/nexus/next/browser-support.png)
+There are more details about how convolution and pooling are done mathematically, this can be referred from the nice note from Stanford:http://cs231n.github.io/convolutional-networks/.
