@@ -1,8 +1,8 @@
 ---
 title: Build Picture Classifier on CNN
-description: CNN is the most popular way to for image processing currently.
+description: CNN is the most popular way to for image processing currently. Classifier on CNN is the basis of more complext networks.
 categories:
- - tutorial
+ - CNN
 tags: CNN
 ---
 
