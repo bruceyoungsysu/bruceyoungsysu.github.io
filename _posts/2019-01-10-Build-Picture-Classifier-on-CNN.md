@@ -12,13 +12,13 @@ Any tranformaton involving frequency domain operations is suitable for image pro
 
 Basically we can consider two ways of interpreting the content of an image: one way is to treat the image in time domain, thus we can expand the image by pixel forming them to 1D vector. 
 
-![](/Users/tianqiyang/Documents/github/bruceyoungsysu.github.io/_posts/classifier_on_CNN/one_dimensional.png) 
+![](https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/classifier_on_CNN/one_dimensional.png) 
 
 Thus the one dimensional vector can be used in any classifier, not only Neural Network, but also SVM and random forest. 
 
 Or we can treat it as a two dimensional signal as we mentioned above. Then train the train the filters on its extracted signals. Thus we actually updating this network on frequency domain.
 
-![](/Users/tianqiyang/Documents/github/bruceyoungsysu.github.io/_posts/classifier_on_CNN/conv.png)
+![](https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/classifier_on_CNN/conv.png)
 
 (All figures from: http://cs231n.stanford.edu/slides/2018/cs231n_2018_lecture05.pdf)
 
