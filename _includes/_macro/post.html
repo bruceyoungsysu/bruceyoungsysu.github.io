@@ -276,10 +276,7 @@
           {% if photos_size_modulo_COLUMN_NUMBER > 0 %}</div>{% endif %}
         </div>
       {% endif %}
-
-      {% if post.image%}
-      <img src="{{ post.image }}" class="abstract-image"/>
-      {% endif%}
+    
 
       {% if is_index %}
         {% if post.description and site.excerpt_description %}
