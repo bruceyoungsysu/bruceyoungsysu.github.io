@@ -7,7 +7,9 @@ tags: image-processing
 image: https://github.com/bruceyoungsysu/bruceyoungsysu.github.io/blob/master/_posts/log_gabor/2d_log_gabor_test.PNG?raw=true
 ---
 
-Wavelet transform is frequently used in picture denoising as it can cover a broader length in the frequency domain. Wavelet transforms are based on small wavelets with limited duration. The translated-version wavelets locate where we concern. Whereas the scaled-version wavelets allow us to analyze the signal on a different scale.
+Wavelet transform is frequently used in picture denoising as it can cover a broader length in the frequency domain. Wavelet transforms are based on small wavelets with limited duration. Gabor filter is one of the most commonly used filter in the field of signal analysis.
+
+For a wavelet, there are two versions of it. The translated-version wavelets locate where we concern. Whereas the scaled-version wavelets allow us to analyze the signal on a different scale.
 
 The log-Gabor filter is an advancement of Gabor filter. it better fits the statistics of natural images such as edges and corners. These features can be easily used as indicators in pattern recongnition. 
 
