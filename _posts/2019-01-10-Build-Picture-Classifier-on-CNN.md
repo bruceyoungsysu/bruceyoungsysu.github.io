@@ -4,7 +4,6 @@ categories:
  - CNN
 tags: CNN
 image:111
-description: CNN is the most popular way to for image processing currently. Classifier on CNN is the basis of more complext networks.
 ---
 
 Any tranformaton involving frequency domain operations is suitable for image processing. An image can be treated as a two-dimensional signal which can be applied many image processing techniques. High dimensional Fourier Transformation, Convolution and even Wavelet Transformation are suitable to extract certain features from a 2D signal with possibilities of various filters.
