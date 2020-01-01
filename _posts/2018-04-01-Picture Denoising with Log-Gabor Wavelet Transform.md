@@ -1,15 +1,13 @@
 ---
-title: Picture Style Transfer with CNN
+title: Picture Denoising with Log-Gabor Wavelet Transformation
 categories:
- - CNN
- - Style Transfer
-tags: CNN
+ - Python
+ - Image Processing
+tags: image-processing
 image: https://github.com/bruceyoungsysu/bruceyoungsysu.github.io/blob/master/_posts/log_gabor/2d_log_gabor_test.PNG?raw=true
 ---
 
-### Concepts
-Wavelet transform is frequently used in picture denosing as it can cover broder length in frequency domain. Wavelet transforms are based on small wavelets with limited duration. The translated-version
-wavelets locate where we concern. Whereas the scaled-version wavelets allow us to analyze the signal in different scale.
+Wavelet transform is frequently used in picture denoising as it can cover a broader length in the frequency domain. Wavelet transforms are based on small wavelets with limited duration. The translated-version wavelets locate where we concern. Whereas the scaled-version wavelets allow us to analyze the signal on a different scale.
 
 The log-Gabor filter is an advancement of Gabor filter. it better fits the statistics of natural images such as edges and corners. These features can be easily used as indicators in pattern recongnition. 
 
