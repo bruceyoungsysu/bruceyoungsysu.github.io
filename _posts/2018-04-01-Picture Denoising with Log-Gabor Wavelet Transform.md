@@ -4,7 +4,8 @@ date: 2018-04-01 16:34:09
 categories:
 - Python
 - Image Processing
-image:https://github.com/bruceyoungsysu/bruceyoungsysu.github.io/blob/master/_posts/log_gabor/2d_log_gabor_test.PNG?raw=true
+image:
+https://github.com/bruceyoungsysu/bruceyoungsysu.github.io/blob/master/_posts/log_gabor/2d_log_gabor_test.PNG?raw=true
 ---
 
 ### Concepts
