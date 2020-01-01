@@ -277,6 +277,9 @@
         </div>
       {% endif %}
 
+      {% if post.image%}
+      <img src="{{ post.image }}" class="abstract-image"/>
+      {% endif%}
 
       {% if is_index %}
         {% if post.description and site.excerpt_description %}
@@ -290,10 +293,13 @@
           </div>
           <!--/noindex-->
         {% elsif post.excerpt  %}
+          <div>
           {% if post.image%}
           <img src="{{ post.image }}" class="abstract-image"/>
           {% endif%}
           {{ post.excerpt }}
+          </div>
+
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="{{ post.url | relative_url }}{% if site.scroll_to_more %}#{{ __.post.more }}{% endif %}" rel="contents">
@@ -302,10 +308,7 @@
           </div>
           <!--/noindex-->
         {% elsif site.auto_excerpt.enable %}
-                {% assign content = post.content | strip_html %}
-          {% if post.image%}
-          <img src="{{ post.image }}" class="abstract-image"/>
-          {% endif%}
+          {% assign content = post.content | strip_html %}
           {{ content | slice: 0, site.auto_excerpt.length }}
           {% if content.size > site.auto_excerpt.length %}...{% endif %}
           <!--noindex-->
