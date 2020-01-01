@@ -279,6 +279,7 @@
 
       {% if is_index %}
         {% if post.description and site.excerpt_description %}
+          <img src="https://picsum.photos/200/300"/>
           {{ post.description }}
           <!--noindex-->
           <div class="post-button text-center">
@@ -288,6 +289,7 @@
           </div>
           <!--/noindex-->
         {% elsif post.excerpt  %}
+          <img src="https://picsum.photos/200/300"/>
           {{ post.excerpt }}
           <!--noindex-->
           <div class="post-button text-center">
@@ -297,6 +299,7 @@
           </div>
           <!--/noindex-->
         {% elsif site.auto_excerpt.enable %}
+          <img src="https://picsum.photos/200/300"/>
           {% assign content = post.content | strip_html %}
           {{ content | slice: 0, site.auto_excerpt.length }}
           {% if content.size > site.auto_excerpt.length %}...{% endif %}
