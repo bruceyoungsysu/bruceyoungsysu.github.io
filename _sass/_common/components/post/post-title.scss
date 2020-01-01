@@ -11,7 +11,7 @@
 .posts-expand .post-title-link {
   display: inline-block;
   position: relative;
-  color: $black-light;
+  color: $twitter-blue;
   border-bottom: none;
   line-height: 1.2;
   vertical-align: top;
@@ -23,7 +23,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #000;
+    background-color: #00aced;
     visibility: hidden;
     @include transform(scaleX(0));
     @include the-transition();
