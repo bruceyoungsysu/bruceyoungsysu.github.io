@@ -4,7 +4,7 @@ categories:
  - CNN
  - Style Transfer
 tags: CNN
-image: https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/style_transfer/Deadpool_sn.png
+image: https://github.com/bruceyoungsysu/bruceyoungsysu.github.io/blob/master/_posts/log_gabor/2d_log_gabor_test.PNG?raw=true
 ---
 
 ### Concepts
