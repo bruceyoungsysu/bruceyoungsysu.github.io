@@ -290,6 +290,9 @@
           </div>
           <!--/noindex-->
         {% elsif post.excerpt  %}
+          {% if post.image%}
+          <img src="{{ post.image }}" class="abstract-image"/>
+          {% endif%}
           {{ post.excerpt }}
           <!--noindex-->
           <div class="post-button text-center">
