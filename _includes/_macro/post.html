@@ -277,6 +277,11 @@
         </div>
       {% endif %}
 
+      {% if post.abimage}
+          {% assign image = post.abimage %}
+          <img src="{{image}}"/>
+      {% endif %}
+
       {% if is_index %}
         {% if post.description and site.excerpt_description %}
 <!--          <img class="post-image-overview" src="https://picsum.photos/200/300"/>-->

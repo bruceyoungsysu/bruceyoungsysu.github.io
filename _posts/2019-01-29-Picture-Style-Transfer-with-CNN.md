@@ -4,6 +4,7 @@ categories:
  - CNN
  - Style Transfer
 tags: CNN
+Abimage:http://ww1.sinaimg.cn/mw690/81b78497jw1emfgwkasznj21hc0u0qb7.jpg
 ---
 
 Style transfer is an interesting task to do, as it contains the basic ideas in image processing which is popular in model mobile apps. It is also a project that worth stressing in computer vision classes. 
@@ -38,7 +39,7 @@ Here we use the already well trained [VGG-19 layer](http://www.robots.ox.ac.uk/~
 
 (From: http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture9.pdf)
 
-The layers of 'conv1_1',  'conv2_1', 'conv3_1', 'conv4_1',and 'conv5_1' are used as content layers to extract content features of different dimensions. Each of the above layers has defined a series of filter banks which varies with the postion of the layer in the network. We assume layer \(l\) has number of $N_l​$ filter and each filter has dimension of $M_l​$. If the original image is $p​$ and generated image is $f​$, the square loss of content layer $l​$ is defined as:
+The layers of 'conv1_1',  'conv2_1', 'conv3_1', 'conv4_1',and 'conv5_1' are used as content layers to extract content features of different dimensions. Each of the above layers has defined a series of filter banks which varies with the postion of the layer in the network. We assume layer \(l\) has number of $N_l$ filter and each filter has dimension of $M_l$. If the original image is $p$ and generated image is $f$, the square loss of content layer $l$ is defined as:
 $$
 \begin{align*}
 L_{content}(p,g,l)=1/2 (\Sigma_{ij} (G^l-P^l)_{ij})^2
@@ -46,7 +47,7 @@ L_{content}(p,g,l)=1/2 (\Sigma_{ij} (G^l-P^l)_{ij})^2
 $$
 Where $F^l$ and $P^l$ is feture map of generated and original image respectively.
 
-We can use feature correlations between features to represent the style of an image, which is given by Gram Matrix $G^l\in R^{N^l N^l}​$ where $G^l_{ij}​$ is the inner product between the feature maps $i​$ and $j​$ in layer $l​$:
+We can use feature correlations between features to represent the style of an image, which is given by Gram Matrix $G^l\in R^{N^l N^l}$ where $G^l_{ij}$ is the inner product between the feature maps $i$ and $j$ in layer $l$:
 
 ​                                                                   $G^l_{ij} = \Sigma F^l_{ik} F^l_{jk}$ 
 
@@ -67,7 +68,7 @@ The total loss is
 $$
 L_{loss}(p,g,a) = \alpha L_{content}(p,g)+\beta L_{style}(g,a)
 $$
-Where $\alpha$ and $\beta​$ are weights of different loss functions respectively.
+Where $\alpha$ and $\beta$ are weights of different loss functions respectively.
 
 # Other Hyperparameters
 
