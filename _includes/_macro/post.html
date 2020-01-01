@@ -282,12 +282,14 @@
         {% if post.description and site.excerpt_description %}
 <!--          <img class="post-image-overview" src="https://picsum.photos/200/300"/>-->
         <div class="abstract-main">
-          {% if post.image%}
+          {% if post.image %}
           <img src="{{ post.image }}" class="abstract-image"/>
-          {% endif%}
-          {{ post.description }}
+          {% endif %}
+
         </div>
+    {{ post.description }}
           <!--noindex-->
+
           <div class="post-button text-center">
             <a class="btn" href="{{ post.url | relative_url }}">
               {{ __.post.read_more }} &raquo;
