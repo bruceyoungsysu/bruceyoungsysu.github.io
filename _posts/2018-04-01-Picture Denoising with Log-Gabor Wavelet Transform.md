@@ -1,12 +1,10 @@
 ---
-title: Picture Denoising with Log-Gabor Wavelet Transform
-date: 2018-04-01 16:34:09
+title: Picture Style Transfer with CNN
 categories:
-- Python
-- Image Processing
-tags: image-processing
-image:
-https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/style_transfer/Deadpool_sn.png
+ - CNN
+ - Style Transfer
+tags: CNN
+image: https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/style_transfer/Deadpool_sn.png
 ---
 
 ### Concepts
