@@ -1,11 +1,9 @@
 ---
-title: Picture Style Transfer with CNN
-description:22222
+title: Build a Picture Classifier on CNN
 categories:
  - CNN
- - Style Transfer
 tags: CNN
-image: https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/style_transfer/Deadpool_sn.png
+image: https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/classifier_on_CNN/conv.png
 ---
 
 Any tranformaton involving frequency domain operations is suitable for image processing. An image can be treated as a two-dimensional signal which can be applied many image processing techniques. High dimensional Fourier Transformation, Convolution and even Wavelet Transformation are suitable to extract certain features from a 2D signal with possibilities of various filters.
