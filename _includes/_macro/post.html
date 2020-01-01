@@ -280,7 +280,7 @@
     {% if post.images and post.images.size > 0 %}
     <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
       {% assign COLUMN_NUMBER = 3 %}
-      {% for photo in post.photos %}
+      {% for photo in post.images %}
       {% assign index0_modulo_COLUMN_NUMBER = forloop.index0 | modulo: COLUMN_NUMBER %}
       {% if index0_modulo_COLUMN_NUMBER == 0 %}<div class="post-gallery-row">{% endif %}
       <a class="post-gallery-img fancybox"
