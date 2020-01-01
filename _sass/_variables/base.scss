@@ -23,6 +23,7 @@ $blue-bright  : #87daff;
 $blue         : #0684bd;
 $blue-deep    : #262a30;
 $orange       : #fc6423;
+$twitter-blue: #0084b4;
 
 
 
@@ -35,9 +36,9 @@ $text-color                   : $black-light;
 
 // Global link color.
 $link-color                   : $black-light;
-$link-hover-color             : $black-deep;
+$link-hover-color             : $twitter-blue;
 $link-decoration-color        : $grey-light;
-$link-decoration-hover-color  : $black-deep;
+$link-decoration-hover-color  : $twitter-blue;
 
 // Global border color.
 $border-color                 : $grey-light;
@@ -156,14 +157,14 @@ $code-background                : $gainsboro;
 $btn-font-weight                : normal;
 
 $btn-default-radius             : 0;
-$btn-default-bg                 : $black-deep;
+$btn-default-bg                 : $twitter-blue;
 $btn-default-color              : white;
 $btn-default-font-size          : 14px;
 $btn-default-border-width       : 2px;
-$btn-default-border-color       : $black-deep;
+$btn-default-border-color       : $twitter-blue;
 $btn-default-hover-bg           : white;
-$btn-default-hover-color        : $black-deep;
-$btn-default-hover-border-color : $black-deep;
+$btn-default-hover-color        : $twitter-blue;
+$btn-default-hover-border-color : $twitter-blue;
 
 
 
@@ -221,7 +222,7 @@ $head-bg                        : transparent;
 $site-meta-text-align           : center;
 $brand-color                    : white;
 $brand-hover-color              : white;
-$brand-bg                       : $black-deep;
+$brand-bg                       : $twitter-blue;
 
 $logo-font-size                 : 20px;
 $logo-font-size                 : if(type-of(jekyll-config('font.logo.size')) == 'number', jekyll-config('font.logo.size') + px, $logo-font-size);
@@ -232,7 +233,7 @@ $subtitle-color                 : $grey-dark;
 
 // Menu
 $menu-link-border               : transparent;
-$menu-link-hover-border         : $black-deep;
+$menu-link-hover-border         : $twitter-blue;
 
 
 
@@ -258,7 +259,7 @@ $posts-collapse-left-mobile     : 5px;
 
 $read-more-color                : white;
 $read-more-font-size            : 14px;
-$read-more-bg-color             : $black-deep;
+$read-more-bg-color             : $twitter-blue;
 $read-more-border-radius        : 0;
 
 
