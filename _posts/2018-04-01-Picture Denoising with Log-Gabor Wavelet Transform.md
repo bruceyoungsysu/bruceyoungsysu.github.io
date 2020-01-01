@@ -4,8 +4,9 @@ date: 2018-04-01 16:34:09
 categories:
 - Python
 - Image Processing
+tags: image-processing
 image:
-https://github.com/bruceyoungsysu/bruceyoungsysu.github.io/blob/master/_posts/log_gabor/2d_log_gabor_test.PNG?raw=true
+https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/style_transfer/Deadpool_sn.png
 ---
 
 ### Concepts
