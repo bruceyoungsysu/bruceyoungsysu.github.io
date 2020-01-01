@@ -7,7 +7,7 @@ tags: CNN
 image: https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/style_transfer/Deadpool_sn.png
 ---
 
-Style transfer is an interesting task to do, as it contains the basic ideas in image processing which is popular in model mobile apps. It is also a project that worth stressing in computer vision classes. 
+Style transfer is an interesting task to do, as it contains the basic ideas in image processing which is popular in model mobile apps. It is also a project that worth stressing in computer vision classes. In this post, we implemented a style transfer CNN on the top of the pre-trained VGG-16 or VGG-19 models. To achieve the goal of style transfer, two loss functions are utilized to optimize the neural network: the style loss and the content loss. By adjusting the ratio of these two loss functions, the user is able to control the degree of style transference.
 
 # About Style Transfer
 
@@ -83,7 +83,6 @@ Reference: https://github.com/chiphuyen/stanford-tensorflow-tutorials/tree/maste
     extensions: ["tex2jax.js"],
     jax: ["input/TeX", "output/HTML-CSS"],
     tex2jax: {
-      <!--$表示行内元素，$$表示块状元素 -->
       inlineMath: [ ['$','$'], ["\\(","\\)"] ],
       displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
       processEscapes: true
@@ -91,7 +90,7 @@ Reference: https://github.com/chiphuyen/stanford-tensorflow-tutorials/tree/maste
     "HTML-CSS": { availableFonts: ["TeX"] }
   });
 </script>
-<!--加载MathJax的最新文件， async表示异步加载进来 -->
+
 <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js">
 </script>
 
