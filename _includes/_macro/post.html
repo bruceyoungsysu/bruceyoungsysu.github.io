@@ -276,26 +276,28 @@
           {% if photos_size_modulo_COLUMN_NUMBER > 0 %}</div>{% endif %}
         </div>
       {% endif %}
+      {% if post.image%}
+        {{post.image}}
+      {% endif%}
+<!--    {% if post.images and post.images.size > 0 %}-->
+<!--    <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">-->
+<!--      {% assign COLUMN_NUMBER = 3 %}-->
+<!--      {% for photo in post.images %}-->
+<!--      {% assign index0_modulo_COLUMN_NUMBER = forloop.index0 | modulo: COLUMN_NUMBER %}-->
+<!--      {% if index0_modulo_COLUMN_NUMBER == 0 %}<div class="post-gallery-row">{% endif %}-->
+<!--      <a class="post-gallery-img fancybox"-->
+<!--         href="{{ photo }}" rel="gallery_{{ post._id }}"-->
+<!--         itemscope itemtype="http://schema.org/ImageObject" itemprop="url">-->
+<!--        <img src="{{ photo }}" itemprop="contentUrl"/>-->
+<!--      </a>-->
+<!--      {% if index0_modulo_COLUMN_NUMBER == 2 %}</div>{% endif %}-->
+<!--      {% endfor %}-->
 
-    {% if post.images and post.images.size > 0 %}
-    <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-      {% assign COLUMN_NUMBER = 3 %}
-      {% for photo in post.images %}
-      {% assign index0_modulo_COLUMN_NUMBER = forloop.index0 | modulo: COLUMN_NUMBER %}
-      {% if index0_modulo_COLUMN_NUMBER == 0 %}<div class="post-gallery-row">{% endif %}
-      <a class="post-gallery-img fancybox"
-         href="{{ photo }}" rel="gallery_{{ post._id }}"
-         itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-        <img src="{{ photo }}" itemprop="contentUrl"/>
-      </a>
-      {% if index0_modulo_COLUMN_NUMBER == 2 %}</div>{% endif %}
-      {% endfor %}
-
-      {% comment %} Append end tag for `post-gallery-row` when (photos size mod COLUMN_NUMBER) is less than COLUMN_NUMBER {% endcomment %}
-      {% assign photos_size_modulo_COLUMN_NUMBER = post.photos.size | modulo: COLUMN_NUMBER %}
-      {% if photos_size_modulo_COLUMN_NUMBER > 0 %}</div>{% endif %}
-    </div>
-    {% endif %}
+<!--      {% comment %} Append end tag for `post-gallery-row` when (photos size mod COLUMN_NUMBER) is less than COLUMN_NUMBER {% endcomment %}-->
+<!--      {% assign photos_size_modulo_COLUMN_NUMBER = post.photos.size | modulo: COLUMN_NUMBER %}-->
+<!--      {% if photos_size_modulo_COLUMN_NUMBER > 0 %}</div>{% endif %}-->
+<!--    </div>-->
+<!--    {% endif %}-->
 
       {% if post.abimage}
           {% assign image = post.abimage %}

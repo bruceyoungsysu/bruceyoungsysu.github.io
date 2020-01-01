@@ -6,8 +6,7 @@ categories:
 tags: CNN
 photos:
 - http://ww1.sinaimg.cn/mw690/81b78497jw1emfgwkasznj21hc0u0qb7.jpg
-images:
-http://ww3.sinaimg.cn/mw690/81b78497jw1emfgwjrh2pj21hc0u01g3.jpg
+image: http://ww3.sinaimg.cn/mw690/81b78497jw1emfgwjrh2pj21hc0u01g3.jpg
 ---
 
 Style transfer is an interesting task to do, as it contains the basic ideas in image processing which is popular in model mobile apps. It is also a project that worth stressing in computer vision classes. 
