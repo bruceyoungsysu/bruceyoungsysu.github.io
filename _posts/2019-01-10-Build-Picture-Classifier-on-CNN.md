@@ -3,7 +3,8 @@ title: Build Picture Classifier on CNN
 categories:
  - CNN
 tags: CNN
-
+image:
+https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/style_transfer/Deadpool_sn.png
 ---
 
 Any tranformaton involving frequency domain operations is suitable for image processing. An image can be treated as a two-dimensional signal which can be applied many image processing techniques. High dimensional Fourier Transformation, Convolution and even Wavelet Transformation are suitable to extract certain features from a 2D signal with possibilities of various filters.
