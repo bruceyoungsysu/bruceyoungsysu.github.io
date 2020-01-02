@@ -24,8 +24,8 @@ This movie website is developed for rating and archiving the movies for each use
    <img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/img_1.png" alt="image-20191230181929272" width=700px />
 
   When the cursor is hovering over the poster, there will be a popup window showing the detailed introduction of the corresponding movie including the movie's full name, publishing date and content of the movie.
-
-   <img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/image-20191229171633864.png" alt="image-20191229171633864"/>
+   <p width=500px>
+   <img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/image-20191229171633864.png" alt="image-20191229171633864"/></p>
 
   The movie genres deck also provides tags to navigate to each genre by clicking on the corresponding text
 
