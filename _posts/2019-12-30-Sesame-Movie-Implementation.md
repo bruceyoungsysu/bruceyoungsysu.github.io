@@ -21,27 +21,27 @@ This movie website is developed for rating and archiving the movies for each use
 
   On the front page of the Sesame Movie, I implemented two decks of movies in order to display movies in the form of cards. Each card is comprised of a fixed-size poster, movie's title and its rating from TMDB. There is also a group of forwarding and backward arrows to help the user to navigate to a different group of cards. 
 
-   <img src="./sesame_movie/img_1.png" alt="image-20191230181929272" width=700px />
+   <img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/img_1.png" alt="image-20191230181929272" width=700px />
 
   When the cursor is hovering over the poster, there will be a popup window showing the detailed introduction of the corresponding movie including the movie's full name, publishing date and content of the movie.
 
-   <img src="./sesame_movie/image-20191229171633864.png" alt="image-20191229171633864" width=500px/>
+   <img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/image-20191229171633864.png" alt="image-20191229171633864" width=500px/>
 
   The movie genres deck also provides tags to navigate to each genre by clicking on the corresponding text
 
-   <img src="./sesame_movie/img_3.png" alt="image-20191230141836979" width=700px align="center"/>
+   <img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/img_3.png" alt="image-20191230141836979" width=700px align="center"/>
 
 2. **Movie Details**
 
   By clicking on each movie's poster, the user will be able to navigate to the detail page of each movie. The detailed information of a movie includes a high-resolution poster of the movie, the movie name and its publishing date, a detailed overview and the genres it belongs to. There is also a background image crossing the whole width of the page.
 
-   <img src="./sesame_movie/image-20191230143008418.png" alt="image-20191230143008418" width=600px align="center"/>
+   <img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/image-20191230143008418.png" alt="image-20191230143008418" width=600px align="center"/>
 
   Below the detailed information of the movie, there lists the top-billed casts and top reviews in the form of decks
 
-   <img src="./sesame_movie/image-20191230144439731.png" alt="image-20191230144439731" width=700px/>
+   <img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/image-20191230144439731.png" alt="image-20191230144439731" width=700px/>
 
-   <img src="./sesame_movie/image-20191230144547827.png" alt="image-20191230144547827" width=700px />
+   <img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/image-20191230144547827.png" alt="image-20191230144547827" width=700px />
 
 3. **User Login and Like a Movie**
 
@@ -49,15 +49,15 @@ This movie website is developed for rating and archiving the movies for each use
 
   The login popup is shown as follows:
 
-   <img src="./sesame_movie/image-20191230145943707.png" alt="image-20191230145943707" width=300px align="center"/>
+   <img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/image-20191230145943707.png" alt="image-20191230145943707" width=300px align="center"/>
 
   The header after login when we are using the user name of **react**:
 
-   <img src="./sesame_movie/image-20191230153607367.png" alt="image-20191230153607367" />
+   <img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/image-20191230153607367.png" alt="image-20191230153607367" />
 
   After logging in, the user can keep their own record of liked movies by clicking on the heart icon. If a movie is already in the list of favorite movies, the heart icon will be shown as red:
 
-   <img src="./sesame_movie/image-20191230162803175.png" alt="image-20191230162803175" width=500px align="center"/>
+   <img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/image-20191230162803175.png" alt="image-20191230162803175" width=500px align="center"/>
 
   By clicking on the red heart again, the user can remove the movie from the favorite list.
 
