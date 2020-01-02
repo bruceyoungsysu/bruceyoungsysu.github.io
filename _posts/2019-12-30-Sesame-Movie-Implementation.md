@@ -17,9 +17,9 @@ In this post we implemented both the front-end and the back-end of Sesame Movie 
 
 This movie website is developed for rating and archiving the movies for each user. The data of this movie site is from ****the movie database(TMDB)****. The features implemented in this site include:
 
-1. **Movie Browsing**
+**Movie Browsing**
 
-  On the front page of the Sesame Movie, I implemented two decks of movies in order to display movies in the form of cards. Each card is comprised of a fixed-size poster, movie's title and its rating from TMDB. There is also a group of forwarding and backward arrows to help the user to navigate to a different group of cards. 
+On the front page of the Sesame Movie, I implemented two decks of movies in order to display movies in the form of cards. Each card is comprised of a fixed-size poster, movie's title and its rating from TMDB. There is also a group of forwarding and backward arrows to help the user to navigate to a different group of cards. 
 
    ![](https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/img_1.png){:width="700px"}
 
@@ -31,9 +31,9 @@ This movie website is developed for rating and archiving the movies for each use
 
    ![](https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/img_3.png){:width="700px"} 
 
-2. **Movie Details**
+**Movie Details**
 
-  By clicking on each movie's poster, the user will be able to navigate to the detail page of each movie. The detailed information of a movie includes a high-resolution poster of the movie, the movie name and its publishing date, a detailed overview and the genres it belongs to. There is also a background image crossing the whole width of the page.
+By clicking on each movie's poster, the user will be able to navigate to the detail page of each movie. The detailed information of a movie includes a high-resolution poster of the movie, the movie name and its publishing date, a detailed overview and the genres it belongs to. There is also a background image crossing the whole width of the page.
 
    ![](https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/image-20191230143008418.png){:width="600px"}
 
@@ -43,11 +43,11 @@ This movie website is developed for rating and archiving the movies for each use
 
    ![](https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/image-20191230144547827.png){:width="700px"}
 
-3. **User Login and Like a Movie**
+**User Login and Like a Movie**
 
-  The website also supports users to register or login. After logging in, the registered user name will be shown instead of the login button. 
+The website also supports users to register or login. After logging in, the registered user name will be shown instead of the login button. 
 
-  The login popup is shown as follows:
+The login popup is shown as follows:
 
    ![](https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/image-20191230145943707.png){:width="300px"}
 
