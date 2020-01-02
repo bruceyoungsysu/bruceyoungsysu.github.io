@@ -4,7 +4,7 @@ categories:
  - Spring Boot
  - React.js
 tags: React
-image: https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/classifier_on_CNN/conv.png
+image: https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/img_3.png
 ---
 
 In this post we implemented both the front-end and the back-end of Sesame Movie website utilizing React.js and Spring Boot respectively. The basic functions implemented in this website include browsing movies by trending or genres, browsing game detailed information, and user register or login to record their preferences on each movie. More functions like user creating movie lists, rate or write reviews for a movie.
@@ -25,7 +25,7 @@ This movie website is developed for rating and archiving the movies for each use
 
   When the cursor is hovering over the poster, there will be a popup window showing the detailed introduction of the corresponding movie including the movie's full name, publishing date and content of the movie.
 
-   <img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/image-20191229171633864.png" alt="image-20191229171633864" width=500px/>
+   <img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/image-20191229171633864.png" alt="image-20191229171633864"/>
 
   The movie genres deck also provides tags to navigate to each genre by clicking on the corresponding text
 
@@ -49,7 +49,7 @@ This movie website is developed for rating and archiving the movies for each use
 
   The login popup is shown as follows:
 
-   <img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/image-20191230145943707.png" alt="image-20191230145943707" width=300px align="center"/>
+   <img src="https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/image-20191230145943707.png" alt="image-20191230145943707" width=300px/>
 
   The header after login when we are using the user name of **react**:
 
