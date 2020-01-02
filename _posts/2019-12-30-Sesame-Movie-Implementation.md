@@ -9,13 +9,11 @@ image: https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io
 
 In this post we implemented both the front-end and the back-end of Sesame Movie website utilizing React.js and Spring Boot respectively. The basic functions implemented in this website include browsing movies by trending or genres, browsing game detailed information, and user register or login to record their preferences on each movie. More functions like user creating movie lists, rate or write reviews for a movie.
 
-##Sesame Movie React Server
-
-
+## Sesame Movie React Server
 
 #### Features
 
-This movie website is developed for rating and archiving the movies for each user. The data of this movie site is from ****the movie database(TMDB)****. The features implemented in this site include:
+This movie website is developed for rating and archiving the movies for each user. The data of this movie site is from **the movie database(TMDB)**. The features implemented in this site include:
 
 **Movie Browsing**
 
