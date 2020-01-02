@@ -63,7 +63,7 @@ This movie website is developed for rating and archiving the movies for each use
 
 
 
-####Implementations
+#### Implementation
 
 The front end server is implemented in React.js. Its components mainly fall into the following several categories:
 
