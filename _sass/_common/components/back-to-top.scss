@@ -7,7 +7,7 @@
     z-index: $zindex-5;
     padding: 0 6px;
     width: if(jekyll-config('sidebar.scrollpercent'), initial, 24px);
-    background: $b2t-bg-color;
+    background: $twitter-blue;
     font-size: $b2t-font-size;
     opacity: $b2t-opacity;
     color: $b2t-color;
