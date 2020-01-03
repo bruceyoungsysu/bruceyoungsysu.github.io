@@ -108,5 +108,7 @@ for fold_, (trn_idx,val_idx) in enumerate(skf.split(df_train, df_train.target)):
     predictions += clf.predict(df_test,num_iteration=clf.best_iteration)/10 #add 10 folds together
 ```
 
-Finally the result could give an accuracy on public test dataset of 0.90107 and accuracy of 0.89993 on private dataset. Also I could get my first bronze metal with the result in this competition:![](https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/santander/Screen Shot 2020-01-03 at 16.26.15.png){:width="200px"}
+Finally the result could give an accuracy on public test dataset of 0.90107 and accuracy of 0.89993 on private dataset. Also I could get my first bronze metal with the result in this competition:
+
+![](https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/santander/Screen Shot 2020-01-03 at 16.26.15.png){:width="200px",align="center"}
 
