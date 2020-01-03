@@ -126,7 +126,7 @@ We downloaded several images online and tested our model against Microsoft's cap
 
 The first image is a sandwich cut in a half with cheese and vegetables:
 
-![]()
+![](https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/picture_captioning/sandwich.png){:width="500px"}
 
 The Microsoft's robot gives the following result:
 
@@ -142,7 +142,7 @@ Meanwhile our model outputs the result of:
 
 The second image is an image of a baseball player:
 
-![]()
+![](https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/picture_captioning/baseball.png){:width="400px"}
 
 Microsoft's robot recognizes the action correctly:
 
@@ -158,7 +158,7 @@ However, our model is over interpreting what the player is doing:
 
 The third is a picture of natural landscape:
 
-![]()
+![](https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/picture_captioning/mountain.png){:width="500px"}
 
 Microsoft's result is:
 
