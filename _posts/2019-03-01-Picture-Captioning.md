@@ -5,7 +5,7 @@ categories:
  - Image Processing
  - Recognition
 tags: Python Recognition
-image: https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/sesame_movie/img_3.png
+image: https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/picture_captioning/mountain.png
 ---
 
 In this post we introduced the implemention of a encode-decoder model for picture captioning. The training dataset we utilized is the coco dataset which contains both the image and its caption extracted by human. We also used resnet-152 to extract the features of images and embedding layers to lower the dimension of text space. A simple LSTM cell class is also implemented to be used in the text interpretation.
