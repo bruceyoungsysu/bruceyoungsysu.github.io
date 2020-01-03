@@ -2,10 +2,11 @@
 title: Santander Customer Transaction Prediction
 categories:
  - Kaggle
- - Light GBM
+ - LightGBM
+ - Recognition
 tags: Regression
-image:
-https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/11194227/depth.png
+image: https:https://s3-ap-south-1.amazonaws.com/av-blog-media/wp-content/uploads/2017/06/11194227/depth.png
+
 ---
 
 This is a kaggle chanllenge launched by Santander to help looking for ways to help customers understand their financial health and identify which products and services might help them achieve their monetary goals. On the other hand, the chanllenge is about to help identify which customers will make a specific transaction in the future, irrespective of the amount of money transacted. 
@@ -109,7 +110,5 @@ for fold_, (trn_idx,val_idx) in enumerate(skf.split(df_train, df_train.target)):
 
 Finally the result could give an accuracy on public test dataset of 0.90107 and accuracy of 0.89993 on private dataset. Also I could get my first bronze metal with the result in this competition:
 
-![](){:width="200px"}
-
-
+![](https://raw.githubusercontent.com/bruceyoungsysu/bruceyoungsysu.github.io/master/_posts/santander/Screen Shot 2020-01-03 at 16.26.15.png){:width="200px"}
 
