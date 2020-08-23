@@ -4,10 +4,11 @@ type: about
 ---
 <p>
 <center>Hi there !</center>
-<center>This is Tianqi (Bruce) Yang, a data analysist, programer and physics engineer.</center>
-    <center>I am currently a graduate student majored in Computer Science at University of Rochester. </center></p>
+<center>This is Tianqi (Bruce) Yang, a developer, data engineer, and physics engineer.</center>
+    <center> Currently I am a software engineer at Amazon. Developing frontend and backend for brand protection pipeline. </center></p>
 <p><center>
-  In the previous summer, I was an intern in the <strong>Google Summer of Code</strong> program and worked in the open-source organization of <strong>AIMA</strong>(Artificial Intelligence: A Modern Approach). I implemented the classic machine learning and deep learning algorithms in Python as well as their demonstration cases in Jupyter notebook. I contributed more than 15000 lines of code to the organization.
+  I graduated from the University of Rochester majored in Computer Science.
+  In the summer of my first year, I was an intern in the <strong>Google Summer of Code</strong> program and worked in the open-source organization of <strong>AIMA</strong>(Artificial Intelligence: A Modern Approach). I implemented the classic machine learning and deep learning algorithms in Python as well as their demonstration cases in Jupyter notebook. I contributed more than 15000 lines of code to the organization.
 </center></p>
 <p>
 <center>I previously worked as a product research engineer in modeling team at <a href = "https://en.wikipedia.org/wiki/ASML_Holding"><strong>ASML</strong></a>.I have supported many international companies such as <a href = "https://en.wikipedia.org/wiki/Samsung">Samsung</a>, <a href = "https://en.wikipedia.org/wiki/Intel">Intel</a>, <a href = "https://en.wikipedia.org/wiki/TSMC">TSMC</a> and <a href = "https://en.wikipedia.org/wiki/GlobalFoundries">GlobalFoundries</a> in physical modeling and data analysis.</center>
